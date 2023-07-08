@@ -43,12 +43,6 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "dependencies": {
-            "Svg": {
-              "target": "Package",
-              "version": "[3.4.4, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

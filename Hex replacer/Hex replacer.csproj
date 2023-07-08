@@ -33,8 +33,4 @@
     <Folder Include="Resources\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Svg" Version="3.4.4" />
-  </ItemGroup>
-
 </Project>

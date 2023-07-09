@@ -41,7 +41,6 @@ jobs:
           name: HexReplacer ${{ github.ref_name }}
           artifacts: "./HexReplacer/bin/Release/*.zip"
           tag: ${{ github.ref_name }}
-          body: "A build of the HexReplacer."
           omitBodyDuringUpdate: true
           allowUpdates: true
           replacesArtifacts: true

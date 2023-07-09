@@ -1,0 +1,18 @@
+D:\yes\Hex replacer\Hex replacer\bin\Debug\net7.0-windows\Hex replacer.exe
+D:\yes\Hex replacer\Hex replacer\bin\Debug\net7.0-windows\Hex replacer.deps.json
+D:\yes\Hex replacer\Hex replacer\bin\Debug\net7.0-windows\Hex replacer.runtimeconfig.json
+D:\yes\Hex replacer\Hex replacer\bin\Debug\net7.0-windows\Hex replacer.dll
+D:\yes\Hex replacer\Hex replacer\bin\Debug\net7.0-windows\Hex replacer.pdb
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.csproj.AssemblyReference.cache
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex_replacer.Properties.Resources.resources
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex_replacer.Window.resources
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.csproj.GenerateResource.cache
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.GeneratedMSBuildEditorConfig.editorconfig
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.AssemblyInfoInputs.cache
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.AssemblyInfo.cs
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.csproj.CoreCompileInputs.cache
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.dll
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\refint\Hex replacer.dll
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.pdb
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\Hex replacer.genruntimeconfig.cache
+D:\yes\Hex replacer\Hex replacer\obj\Debug\net7.0-windows\ref\Hex replacer.dll

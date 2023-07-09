@@ -91,10 +91,21 @@ namespace Hex_replacer
                 return;
             }
 
-            if (string.IsNullOrEmpty(output) || !Directory.Exists(output))
+            if (string.IsNullOrEmpty(output) || !Directory.Exists(output) || Directory.GetFiles(output).Length != 0)
             {
-                MessageBox.Show("Please enter a valid output path.", "Invalid Output", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (Directory.GetFiles(output).Length != 0)
+                {
+                    DialogResult result = MessageBox.Show("Output folder isn't empty! Do you wish to continue?", "Invalid Output", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Cancel || result == DialogResult.No)
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid output path.", "Invalid Output", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
 
             if (string.IsNullOrEmpty(hexSequence) || !IsValidHexSequence(hexSequence))
@@ -144,7 +155,8 @@ namespace Hex_replacer
                 else
                 {
                     StringBuilder message = new();
-                    message.AppendLine("Hex replacement partially completed.");
+                    message.AppendLine("Hex replacement partially incompleted.");
+                    message.AppendLine($"{failedFiles.Count} files didn't contain the original sequence.");
                     foreach (var file in failedFiles)
                     {
                         bool prefixFound = false;
@@ -172,6 +184,14 @@ namespace Hex_replacer
                         {
                             message.AppendLine(file);
                         }
+                        File.Delete(file);
+                        string parentDirectory = Path.GetDirectoryName(file);
+                        while (!string.IsNullOrEmpty(parentDirectory) && Directory.GetFiles(parentDirectory).Length == 0 && Directory.GetDirectories(parentDirectory).Length == 0)
+                        {
+                            Directory.Delete(parentDirectory);
+                            parentDirectory = Path.GetDirectoryName(parentDirectory);
+                        }
+
                     }
                     failedFiles.Clear();
                     MessageBox.Show(message.ToString(), "Replacement incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
